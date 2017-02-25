@@ -1,0 +1,10 @@
+
+platform: mqtt
+name: "Backdoor Lock"
+state_topic: "smartthings/Backdoor Lock/lock"
+command_topic: "smartthings/Backdoor Lock/lock"
+payload_lock: "locked"
+payload_unlock: "unlocked"
+retain: true
+
+

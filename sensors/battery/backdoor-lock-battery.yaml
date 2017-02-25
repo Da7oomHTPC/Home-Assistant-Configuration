@@ -1,0 +1,4 @@
+platform: mqtt
+state_topic: "smartthings/Backdoor Lock/battery"
+name: "Backdoor Deadbolt Battery"
+retain: true

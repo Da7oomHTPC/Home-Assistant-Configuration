@@ -1,0 +1,14 @@
+alias: TempHigh
+trigger:
+  platform: numeric_state
+  entity_id: sensor.hallway_thermostat_danest_temperature
+  above: 72
+action:
+  - service: notify.pushbullet
+    data:
+      message: "Thermostat is reporting temperature higher than expected"
+  - service: climate.set_temperature
+    data:
+       entity_id: climate.hallway_danest
+       temperature: '68'
+ 

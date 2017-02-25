@@ -1,0 +1,5 @@
+platform: mqtt
+state_topic: "smartthings/Utility Room/temperature"
+name: "Utility Room Temperature"
+unit_of_measurement: "F"
+retain: true

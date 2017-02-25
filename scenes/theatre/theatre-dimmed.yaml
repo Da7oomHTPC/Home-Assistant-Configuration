@@ -1,0 +1,19 @@
+name: Theatre Dimmed
+entities:
+  light.fireplace_left:
+    state: on
+    brightness: 77
+    color_temp: 443
+  light.fireplace_right:
+    state: on
+    brightness: 77
+    color_temp: 443
+  light.center:
+    state: on
+    brightness: 77
+    color_temp: 443
+  light.television_backlight:
+    state: on
+    brightness: 77
+    color_temp: 443
+

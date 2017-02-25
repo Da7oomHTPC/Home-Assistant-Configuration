@@ -1,0 +1,209 @@
+sensor.time:
+  friendly_name: Time
+sensor.hallwaydanestlast_connection:
+  friendly_name: Nest Last Online
+sensor.hallwaydanestoperation_mode:
+  friendly_name: Nest Operation Mode
+  icon: mdi:nest-thermostat
+sensor.hallwaydanesttarget:
+  friendly_name: Nest Target Tempurature
+sensor.hallwaydanesttemperature:
+  friendly_name: Nest Current Tempurature
+sensor.theatre_onkyo:
+  icon: mdi:speaker
+sensor.theatre_television:
+  icon: mdi:television-guide
+sensor.gears2:
+  icon: mdi:watch
+sensor.office_television:
+  icon: mdi:television-guide
+sensor.bedroom_television:
+  icon: mdi:television-guide
+sensor.bedroom_ps3:
+  icon: mdi:playstation
+sensor.joes_note:
+  icon: mdi:cellphone
+sensor.jamers_phone:
+  icon: mdi:cellphone
+sensor.shannas_note:
+  icon: mdi:cellphone
+sensor.protect_up:
+  icon: mdi:nest-protect
+sensor.protect_down:
+  icon: mdi:nest-protect
+sensor.theatre_xboxone:
+  icon: mdi:xbox
+sensor.ipad:
+  icon: mdi:tablet-ipad
+sensor.theatre_ps4:
+  icon: mdi:playstation
+sensor.james_echo:
+  icon: mdi:amazon
+  friendly_name: Office Echo
+sensor.theatre_harmonyhub:
+  icon: mdi:remote
+sensor.theatre_echo:
+  icon: mdi:amazon
+sensor.bedroom_echo:
+  icon: mdi:amazon
+sensor.kitchen_echo:
+  icon: mdi:amazon
+sensor.living_room_echo:
+  icon: mdi:amazon
+sensor.office_printer:
+  icon: mdi:printer
+sensor.bedroom_purifier:
+  icon: mdi:weather-windy
+sensor.living_room_nest:
+  icon: mdi:nest-thermostat
+sensor.living_room_ps4:
+  icon: mdi:playstation
+sensor.disk_use_c:
+  friendly_name: System
+sensor.disk_use_d:
+  friendly_name: Downloads
+sensor.disk_use_e:
+  friendly_name: Television
+sensor.disk_use_f:
+  friendly_name: Movies
+sensor.disk_use_z:
+  friendly_name: Backup
+sensor.living_room_co_status:
+  friendly_name: Upstairs CO
+  icon: mdi:skull
+sensor.living_room_smoke_status:
+  friendly_name: Upstairs Smoke
+  icon: mdi:fire
+sensor.downstairs_co_status:
+  friendly_name: Downstairs CO
+  icon: mdi:skull
+sensor.downstairs_smoke_status:
+  friendly_name: Downstairs Smoke
+  icon: mdi:fire
+sensor.laundry_room_moisture:
+  icon: mdi:water
+sensor.utility_room_moisture:
+  icon: mdi:water
+sensor.laundry_room_temperature:
+  icon: mdi:thermometer-lines
+sensor.utility_room_temperature:
+  icon: mdi:thermometer-lines
+sensor.entry_temperature:
+  icon: mdi:thermometer-lines
+sensor.living_room_temperature:
+  icon: mdi:thermometer-lines
+sensor.laundry_room_battery:
+  icon: mdi:battery-charging
+sensor.utility_room_battery:
+  icon: mdi:battery-charging
+sensor.backdoor_openclose_battery:
+  friendly_name: Backdoor Status Battery
+  icon: mdi:battery-charging
+sensor.frontdoor_openclose_battery:
+  friendly_name: Frontdoor Status Battery
+  icon: mdi:battery-charging
+sensor.backdoor_deadbolt_battery:
+  icon: mdi:battery-charging
+sensor.frontdoor_deadbolt_battery:
+  icon: mdi:battery-charging
+sensor.office_temperature:
+  icon: mdi:thermometer-lines
+sensor.theatre_fire_tv:
+  icon: mdi:amazon
+sensor.office_wink_replay:
+  icon: mdi:switch
+sensor.opsblade:
+  icon: mdi:laptop-windows
+sensor.e8abfa8a4a28:
+  icon: mdi:camera
+sensor.kitchen_temperature:
+  icon: mdi:thermometer-lines
+sensor.water_temperature:
+  icon: mdi:thermometer-lines
+sensor.pantry_temperature:
+  icon: mdi:thermometer-lines
+sensor.kitchen_motion_sensor:
+  friendly_name: Kitchen Motion
+  icon: account-multiple-minus
+sensor.office_humidity:
+  icon: mdi:water-percent
+sensor.hallway_thermostat_danest_humidity:
+  icon: mdi:water-percent
+  friendly_name: Thermostat Humidity
+sensor.hallway_thermostat_danest_temperature:
+  friendly_name: Thermostat Temperature
+sensor.living_room_nest_protect_co_status:
+  friendly_name: Upstairs CO Detection
+  icon: mdi:skull
+sensor.downstairs_nest_protect_co_status:
+  friendly_name: Downstairs CO Detection
+  icon: mdi:skull
+sensor.living_room_nest_protect_smoke_status:
+  friendly_name: Upstairs Smoke Detection
+  icon: mdi:fire
+sensor.downstairs_nest_protect_smoke_status:
+  friendly_name: Downstairs Smoke Detection
+  icon: mdi:fire
+sensor.frontdoor:
+  icon: mdi:glassdoor
+sensor.backdoor:
+  icon: mdi:glassdoor
+sensor.kitchen_motion_battery:
+  icon: mdi:battery-charging
+sensor.pantry_battery:
+  icon: mdi:battery-charging
+device_tracker.0090a9e7bc10:
+  friendly_name: Shops NAS
+  icon: mdi:hd
+device_tracker.desktopvpdneig:
+  friendly_name: Joes PC
+  icon: mdi:desktop_mac
+device_tracker.desktope85o2so:
+  friendly_name: Shannas PC
+  icon: mdi:desktop_mac
+device_tracker.hass_pi:
+  friendly_name: HASS Server
+  icon: mdi:raspberrypi
+device_tracker.localhost:
+  friendly_name: Server
+  icon: mdi:desktop_mac
+device_tracker.pi3:
+  friendly_name: ZoneMinder
+  icon: mdi:raspberrypi
+sensor.joes_phone_battery:
+  icon: mdi:battery-charging
+sensor.shannas_phone_battery:
+  icon: mdi:battery-charging
+sensor.crv_fuel_level:
+  icon: mdi:gas-station
+sensor.fusion_fuel_level:
+  icon: mdi:gas-station
+sensor.home_to_work:
+  icon: mdi:map-marker-circle
+sensor.joe_to_home:
+  icon: mdi:map-marker-circle
+sensor.shanna_to_home:
+  icon: mdi:map-marker-circle
+sensor.work_to_home:
+  icon: mdi:map-marker-circle
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

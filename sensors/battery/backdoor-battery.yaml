@@ -1,0 +1,4 @@
+platform: mqtt
+state_topic: "smartthings/Backdoor/battery"
+name: "Backdoor Open/Close Battery"
+retain: true

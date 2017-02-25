@@ -1,0 +1,8 @@
+alias: "Plex started from HASS"
+trigger:
+  platform: state
+  entity_id: input_select.harmony
+  to: 'Plex'
+action:
+  service: script.turn_on
+  entity_id: script.plex

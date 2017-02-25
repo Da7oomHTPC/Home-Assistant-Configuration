@@ -1,0 +1,13 @@
+alias: Frontdoor Opening
+trigger:
+    platform: state
+    entity_id: sensor.frontdoor
+    from: 'closed'
+    to: 'open'
+    state: 'open'
+action:
+    service: notify.basementtab
+    data:
+       message: "May the Force be with you."
+
+

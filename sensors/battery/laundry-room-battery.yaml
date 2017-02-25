@@ -1,0 +1,4 @@
+platform: mqtt
+state_topic: "smartthings/Water Leak Sensor/battery"
+name: "Laundry Room Battery"
+retain: true

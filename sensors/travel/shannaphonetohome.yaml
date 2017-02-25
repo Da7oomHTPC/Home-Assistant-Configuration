@@ -1,0 +1,6 @@
+platform: google_travel_time
+name: Shanna to Home
+api_key: AIzaSyCSWkLHdgQdRkUYrsU3p8TXg0IDyPyiW1Y
+origin: device_tracker.shanna_shanna
+destination: zone.home
+

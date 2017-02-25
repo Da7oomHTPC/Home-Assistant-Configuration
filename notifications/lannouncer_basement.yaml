@@ -1,0 +1,3 @@
+platform: lannouncer
+host: !secret theatre_tab
+name: basementtab

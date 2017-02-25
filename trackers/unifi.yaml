@@ -1,0 +1,7 @@
+- platform: unifi
+  host: !secret ups
+  username: admin
+  password: !secret http_password
+  track_new_devices: no
+  interval_seconds: 2
+  consider_home: 180

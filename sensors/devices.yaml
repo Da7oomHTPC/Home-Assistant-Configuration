@@ -1,0 +1,89 @@
+platform: template
+sensors:
+    theatre_onkyo:
+      friendly_name: 'Theatre AV Receiver'
+      value_template: "{{ 'Online' if is_state('device_tracker.0009b0999f47', 'home') else 'Offline' }}"
+    theatre_television:
+      friendly_name: 'Theatre Television'
+      value_template: "{{ 'Online' if is_state('device_tracker.localhost', 'home') else 'Offline' }}"
+    gears2:
+      friendly_name: 'Samsung Gear S2'
+      value_template: "{{ 'Online' if is_state('device_tracker.ec9bf3a444e6', 'home') else 'Offline' }}"
+    office_television:
+      friendly_name: 'Office Televison'
+      value_template: "{{ 'Online' if is_state('device_tracker.np2n000k026250', 'home') else 'Offline' }}"
+    bedroom_television:
+      friendly_name: 'Bedroom Televison'
+      value_template: "{{ 'Online' if is_state('device_tracker.006b9e7de702', 'home') else 'Offline' }}"
+    bedroom_ps3:
+      friendly_name: 'Bedroom Playstation 3'
+      value_template: "{{ 'Online' if is_state('device_tracker.f8d0ac781df6', 'home') else 'Offline' }}"
+    joes_note:
+      friendly_name: 'Joes Note'
+      value_template: "{{ 'Online' if is_state('device_tracker.android6fa6e08afe3fbd9c', 'home') else 'Offline' }}"
+    protect_up:
+      friendly_name: 'Nest Protect Upstairs'
+      value_template: "{{ 'Online' if is_state('device_tracker.18b43031c3fa', 'home') else 'Offline' }}"
+    protect_down:
+      friendly_name: 'Nest Protect Downstairs'
+      value_template: "{{ 'Online' if is_state('device_tracker.18b43099bff4', 'home') else 'Offline' }}"
+    theatre_xboxone:
+      friendly_name: 'Theatre Xbox One'
+      value_template: "{{ 'Online' if is_state('device_tracker.xboxone', 'home') else 'Offline' }}"
+    ipad:
+      friendly_name: 'iPad'
+      value_template: "{{ 'Online' if is_state('device_tracker.josephsipad', 'home') else 'Offline' }}"
+    theatre_ps4:
+      friendly_name: 'Theatre Playstation 4'
+      value_template: "{{ 'Online' if is_state('device_tracker.ac89954083cb', 'home') else 'Offline' }}"
+    james_echo:
+      friendly_name: 'Office Echo'
+      value_template: "{{ 'Online' if is_state('device_tracker.kindle73a1b32d5', 'home') else 'Offline' }}"
+    theatre_harmonyhub:
+      friendly_name: 'Theatre Harmony Hub'
+      value_template: "{{ 'Online' if is_state('device_tracker.harmonyhub', 'home') else 'Offline' }}"
+    theatre_echo:
+      friendly_name: 'Theatre Echo'
+      value_template: "{{ 'Online' if is_state('device_tracker.kindlea60477e97', 'home') else 'Offline' }}"
+    bedroom_echo:
+      friendly_name: 'Bedroom Echo'
+      value_template: "{{ 'Online' if is_state('device_tracker.50f5daef3166', 'home') else 'Offline' }}"
+    kitchen_echo:
+      friendly_name: 'Kitchen Echo'
+      value_template: "{{ 'Online' if is_state('device_tracker.kindle791f99a27', 'home') else 'Offline' }}"
+    living_room_echo:
+      friendly_name: 'Living Room Echo'
+      value_template: "{{ 'Online' if is_state('device_tracker.kindlebc9cc27e5', 'home') else 'Offline' }}"
+    office_printer:
+      friendly_name: 'Office Printer'
+      value_template: "{{ 'Online' if is_state('device_tracker.hp65a0ec', 'home') else 'Offline' }}"
+    bedroom_purifier:
+      friendly_name: 'Bedroom Purifier'
+      value_template: "{{ 'Online' if is_state('device_tracker.1491820ae889', 'home') else 'Offline' }}"
+    living_room_nest:
+      friendly_name: 'Nest'
+      value_template: "{{ 'Online' if is_state('device_tracker.02aa01ac14140e8u', 'home') else 'Offline' }}"
+    living_room_ps4:
+      friendly_name: 'Living Room Playstation 4'
+      value_template: "{{ 'Online' if is_state('device_tracker.b00594434f71', 'home') else 'Offline' }}"
+    theatre_fire_tv:
+      friendly_name: 'Theatre Fire TV'
+      value_template: "{{ 'Online' if is_state('device_tracker.kindleab20ba09a', 'home') else 'Offline' }}"
+    office_wink_replay:
+      friendly_name: 'Office Wink Relay'
+      value_template: "{{ 'Online' if is_state('device_tracker.android5add8dd6d70a3646', 'home') else 'Offline' }}"
+    joes_pc:
+      friendly_name: 'Joes PC'
+      value_template: "{{ 'Online' if is_state('device_tracker.desktopvpdneig', 'home') else 'Offline' }}"
+    shannas_pc:
+      friendly_name: 'Joes PC'
+      value_template: "{{ 'Online' if is_state('device_tracker.desktope85o2so', 'home') else 'Offline' }}"
+    hass_server:
+      friendly_name: 'Home Assistant Server'
+      value_template: "{{ 'Online' if is_state('device_tracker.hass_pi', 'home') else 'Offline' }}"
+    server:
+      friendly_name: 'Theatre Server'
+      value_template: "{{ 'Online' if is_state('device_tracker.localhost', 'home') else 'Offline' }}"
+
+
+

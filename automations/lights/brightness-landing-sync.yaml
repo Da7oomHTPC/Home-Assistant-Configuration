@@ -1,0 +1,20 @@
+alias: Brightness Landing Sync
+trigger:
+  - platform: state
+    entity_id: light.landing_center
+    to: "on"
+  - platform: state
+    entity_id: light.landing_front
+    to: "on"
+  - platform: state
+    entity_id: light.landing_rear
+    to: "on"
+  - platform: state
+    entity_id: light.landing_stairs
+    to: "on"
+action:
+  service: input_slider.select_value
+  data:
+    entity_id: input_slider.brightness_landing
+  data_template:
+    value: '{{ trigger.to_state.attributes.brightness|float }}'

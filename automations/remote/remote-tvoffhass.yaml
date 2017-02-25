@@ -1,0 +1,8 @@
+alias: "Television turned off from HASS"
+trigger:
+  platform: state
+  entity_id: input_select.harmony
+  to: 'tvoff'
+action:
+  service: script.turn_on
+  entity_id: script.tvoff

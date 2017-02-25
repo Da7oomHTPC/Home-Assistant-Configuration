@@ -1,0 +1,14 @@
+name: Bedroom Nightlight
+entities:
+  light.bedroom_one:
+    state: on
+    brightness: 1
+    color_temp: 450
+  light.bedroom_2:
+    state: on
+    brightness: 1
+    color_temp: 450
+  light.bedroom_3:
+    state: on
+    brightness: 1
+    color_temp: 450

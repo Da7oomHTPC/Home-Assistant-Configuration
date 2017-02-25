@@ -1,0 +1,8 @@
+platform: mqtt
+name: "Nanoleaf"
+state_topic: "smartthings/nanoleaf/switch"
+command_topic: "smartthings/nanoleaf/switch"
+payload_on: "on"
+payload_off: "off"
+retain: true
+icon: mdi:lightbulb

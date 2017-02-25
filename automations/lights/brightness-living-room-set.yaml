@@ -1,0 +1,13 @@
+alias: Brightness Living Room
+trigger:
+  platform: state
+  entity_id: input_slider.brightness_living
+action:
+  service: light.turn_on
+  data:
+    entity_id:
+      - light.stairs_1
+      - light.stairs_2
+      - light.stairs_3
+  data_template:
+    brightness: '{{ states( "input_slider.brightness_living" )|round( 0 ) }}'

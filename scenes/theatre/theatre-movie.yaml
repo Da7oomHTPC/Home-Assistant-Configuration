@@ -1,0 +1,20 @@
+name: Theatre Movie
+entities:
+  light.center:
+    state: off
+  light.fireplace_left:
+    state: on
+    transition: 400
+    xy_color: [0.1691,0.0441]
+    brightness: 150
+  light.fireplace_right:
+    state: on
+    transition: 400
+    xy_color: [0.1691,0.0441]
+    brightness: 150  
+  light.television_backlight:
+    state: on
+    transition: 400
+    xy_color: [0.1691,0.0441]
+    brightness: 255
+

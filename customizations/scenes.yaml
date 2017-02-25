@@ -1,0 +1,63 @@
+scene.living_nightlight:
+  friendly_name: 'Nightlight'
+  icon: mdi:brightness-4
+scene.living_dimmed:
+  friendly_name: 'Dimmed'
+  icon: mdi:brightness-7
+scene.living_relax:
+  friendly_name: 'Relax'
+  icon: mdi:brightness-6
+scene.living_read:
+  friendly_name: 'Read'
+  icon: mdi:brightness-5
+scene.living_concentrate:
+  friendly_name: 'Bright'
+  icon: mdi:star-circle
+scene.living_off:
+  friendly_name: 'Off'
+  icon: mdi:flashlight-off
+scene.bedroom_nightlight:
+  friendly_name: 'Nightlight'
+  icon: mdi:brightness-4
+scene.bedroom_dimmed:
+  friendly_name: 'Dimmed'
+  icon: mdi:brightness-7
+scene.bedroom_relax:
+  friendly_name: 'Relax'
+  icon: mdi:brightness-6
+scene.bedroom_read:
+  friendly_name: 'Read'
+  icon: mdi:brightness-5
+scene.bedroom_concentrate:
+  friendly_name: 'Bright'
+  icon: mdi:star-circle
+scene.bedroom_off:
+  friendly_name: 'Off'
+  icon: mdi:flashlight-off
+scene.theatre_movie:
+  friendly_name: 'Movie'
+  icon: mdi:brightness-4
+scene.theatre_nightlight:
+  friendly_name: 'Nightlight'
+  icon: mdi:brightness-4
+scene.theatre_dimmed:
+  friendly_name: 'Dimmed'
+  icon: mdi:brightness-7
+scene.theatre_relax:
+  friendly_name: 'Relax'
+  icon: mdi:brightness-6
+scene.theatre_read:
+  friendly_name: 'Read'
+  icon: mdi:brightness-5
+scene.theatre_concentrate:
+  friendly_name: 'Bright'
+  icon: mdi:star-circle
+scene.theatre_off:
+  friendly_name: 'Off'
+  icon: mdi:flashlight-off
+scene.ping_joe:
+  friendly_name: Ping Joe
+  icon: mdi:call-split
+
+
+

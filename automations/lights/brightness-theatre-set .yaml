@@ -1,0 +1,14 @@
+alias: Brightness Theatre
+trigger:
+  platform: state
+  entity_id: input_slider.brightness_living
+action:
+  service: light.turn_on
+  data:
+    entity_id:
+      - light.fireplace_left
+      - light.fireplace_right
+      - light.center
+      - light.television_backlight
+  data_template:
+    brightness: '{{ states( "input_slider.brightness_theatre" )|round( 0 ) }}'

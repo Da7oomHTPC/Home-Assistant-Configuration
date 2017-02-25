@@ -1,0 +1,4 @@
+platform: mqtt
+state_topic: "smartthings/Frontdoor Lock/battery"
+name: "Frontdoor Deadbolt Battery"
+retain: true

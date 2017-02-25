@@ -1,0 +1,4 @@
+- platform: owntracks
+  max_gps_accuracy: 200
+  username: admin
+  waypoints: True

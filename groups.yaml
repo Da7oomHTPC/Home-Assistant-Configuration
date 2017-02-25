@@ -1,0 +1,360 @@
+##############################################################
+#
+#                           HOME
+#
+#########################*####################################
+
+default_view:
+  name: DEFAULT
+  view: yes
+  icon: mdi:home
+  entities:
+    - sensor.pihole
+    - sun.sun
+    - group.locks
+    - group.office
+    - group.master
+    - group.theatre
+    - group.landing
+    - group.living_room
+        
+locks:
+  name: Locks
+  control: hidden
+  entities:
+    - lock.backdoor_lock
+    - lock.frontdoor_lock
+
+theatre:
+  name: Theatre
+  control: hidden
+  entities:
+    - group.theatrelights
+    - light.television_backlight
+    - switch.nanoleaf
+    - input_slider.brightness_theatre
+    - input_select.harmony
+    - input_select.scene_theatre
+
+
+master:
+  name: Master Bedroom
+  control: hidden
+  entities:
+    - group.bedroomlights
+    - light.shanna_nightstand
+    - light.joe_nightstand
+    - switch.purifier
+    - input_slider.brightness_bedroom
+    - input_select.scene_bedroom
+
+living_room:
+  name: Living Room
+  control: hidden
+  entities:
+    - group.stairs
+    - input_slider.brightness_living
+
+office: 
+  name: Office
+  control: hidden
+  entities:
+    - switch.top_light_load
+
+landing:
+  name: Landing
+  control: hidden
+  entities: 
+    - group.landinglights
+    - input_slider.brightness_landing
+
+stairs:
+   name: Stairs
+   icon: mdi:lightbulb
+   entities:
+    - light.stairs_1
+    - light.stairs_2
+    - light.stairs_3
+
+landinglights:
+   name: Landing
+   icon: mdi:lightbulb
+   entities:
+    - light.landing_center
+    - light.landing_front
+    - light.landing_stairs
+    - light.landing_rear
+
+bedroomlights:
+    name: Bedroom Lights
+    icon: mdi:lightbulb
+    entities:
+    - light.bedroom_one
+    - light.bedroom_2
+    - light.bedroom_3
+
+theatrelights: 
+   name: Theatre Lights
+   icon: mdi:lightbulb
+   entities:
+   - light.fireplace_left
+   - light.fireplace_right
+   - light.center
+
+##############################################################
+#
+#                           LOCATION
+#
+##############################################################
+
+location_view:
+  name: Location
+  view: yes
+  icon: mdi:map-marker
+  entities:
+    - group.ford_fusion
+    - group.honda_crv
+    - group.joe
+    - group.shanna
+    - group.travel_time
+
+ford_fusion:
+  name: Ford Fusion
+  entities:
+    - device_tracker.c_071c1cf0d26b1be3
+    - sensor.fusion_fuel_level
+
+honda_crv:
+  name: Honda CRV
+  entities:
+    - device_tracker.c_43b2b5b5027ba2db
+    - sensor.crv_fuel_level
+joe:
+  name: Joe
+  entities: 
+    - device_tracker.joe_joe
+    - sensor.joes_phone_battery
+    - sensor.joe_to_home
+
+shanna:
+  name: Shanna
+  entities: 
+    - device_tracker.shanna_shanna
+    - sensor.shannas_phone_battery
+    - sensor.shanna_to_home
+
+travel_time:
+  name: Travel Time
+  entities:
+    - sensor.home_to_work
+    - sensor.work_to_home
+
+
+##############################################################
+#
+#                           SENSORS             
+#
+##############################################################    
+sensor_view:
+  name: Sensors
+  view: yes
+  icon: mdi:gauge
+  entities:
+    - group.climate
+    - group.smoke_gas
+    - group.batteries
+
+climate:
+  name: Climate
+  entities:
+    - sensor.hallway_thermostat_danest_temperature
+    - sensor.water_temperature
+    - sensor.laundry_room_temperature
+    - sensor.utility_room_temperature
+    - sensor.entry_temperature
+    - sensor.kitchen_temperature
+    - sensor.pantry_temperature
+    - sensor.living_room_temperature
+    - sensor.office_temperature
+
+batteries:
+  name: Battery Status
+  entities: 
+    - sensor.laundry_room_battery
+    - sensor.utility_room_battery
+    - sensor.backdoor_openclose_battery
+    - sensor.frontdoor_openclose_battery
+    - sensor.backdoor_deadbolt_battery
+    - sensor.frontdoor_deadbolt_battery
+    - sensor.kitchen_motion_battery
+    - sensor.pantry_battery
+
+smoke_gas:
+  name: Status
+  entities:
+    - sensor.laundry_room_moisture
+    - sensor.utility_room_moisture
+    - sensor.hallway_thermostat_danest_humidity
+    - sensor.office_humidity
+    - sensor.living_room_nest_protect_co_status
+    - sensor.downstairs_nest_protect_co_status
+    - sensor.living_room_nest_protect_smoke_status
+    - sensor.downstairs_nest_protect_smoke_status
+
+##############################################################
+#
+#                     STATUS MONITORING            
+#
+##############################################################    
+
+        
+misc_view:  
+    name: Monitor  
+    view: yes  
+    icon: mdi:power  
+    entities:   
+     - group.sensor_pi
+     - group.media
+     - group.automation
+     - group.voice_control
+     - group.backup
+
+backup:
+  name: Backup
+  entities: 
+   - sensor.ups_battery
+   - sensor.ups_input_voltage
+   - sensor.ups_load
+   - sensor.ups_nominal_input_voltage
+   - sensor.ups_nominal_output_power
+   - sensor.ups_status
+   
+sensor_pi:
+  name: System Monitor
+  entities:
+    - sensor.cpu_use
+    - sensor.disk_use_
+    - sensor.ram_use
+    - sensor.last_boot
+    - sensor.received_eth0
+    - sensor.sent_eth0
+
+media:
+  name: Media
+  entities:
+  - sensor.plex
+  - sensor.theatre_harmonyhub
+  - sensor.theatre_television
+  - sensor.theatre_onkyo
+  - sensor.theatre_xboxone
+  - sensor.theatre_ps4
+  - sensor.theatre_fire_tv
+  - sensor.living_room_ps4
+  - sensor.bedroom_ps3
+  - sensor.bedroom_television
+  - sensor.office_television
+  - sensor.joes_pc
+  - sensor.hass_server
+  - sensor.server
+  - sensor.shopsnas
+
+automation:
+  name: Automation
+  entities:
+  - sensor.office_wink_replay
+  - sensor.bedroom_purifier
+  - sensor.living_room_nest
+  - sensor.protect_up
+  - sensor.protect_down
+  - sensor.harmonyhub
+
+voice_control:
+  name: Voice Control
+  entities:
+  - sensor.bedroom_echo
+  - sensor.james_echo
+  - sensor.kitchen_echo
+  - sensor.theatre_echo
+  - sensor.living_room_echo
+
+
+##############################################################
+#
+#                     SECURITY
+#
+##############################################################    
+
+security:
+  name: Security
+  view: yes
+  icon: mdi:camcorder 
+  entities: 
+  - camera.backdoor
+  - camera.frontdoor
+
+
+##############################################################
+#
+#                     AUTOMATION OVERRIDES
+#
+##############################################################    
+
+automation_overrides:
+  name: Automation Overrides
+  view: yes
+  icon: mdi:inbox-arrow-down
+  entities:
+  - group.automation_
+  - group.texttospeech
+  - group.weblinks
+
+
+automation_:
+  name: Automation Overrides
+  entities:
+  - automation.backdoor_closed
+  - automation.backdoor_left_open
+  - automation.backdoor_opening
+  - automation.frontdoor_opening
+  - automation.commute_delay__home_to_work
+  - automation.commute_delay__work_to_home
+  - automation.frontdoor_left_open
+  - automation.pantry_closed
+  - automation.pantry_open
+  - automation.temphigh
+  - automation.templow
+  - automation.update_notifications
+  - automation.wake_up
+
+texttospeech:
+  name: House Calls
+  entities: 
+  - script.ping_joe
+
+weblinks:
+  name: Web Links
+  entities:
+  - weblink.minecraft_2_admin
+  - weblink.minecraft_2_map
+  - weblink.minecraft_admin
+  - weblink.minecraft_map
+  - weblink.pihole
+  - weblink.security
+  - weblink.sickrage
+  - weblink.storage
+  - weblink.torrents
+
+##############################################################
+#
+#                     MEDIA
+#
+##############################################################    
+
+media_players:
+  name: Media Players
+  icon: mdi:movie
+  view: yes
+  entities:
+  - group._plex_devices_active
+  - group._plex_devices_inactive
+

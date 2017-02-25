@@ -1,0 +1,20 @@
+alias: Commute delay - Work to Home
+trigger:
+  platform: numeric_state
+  entity_id: sensor.work_to_home
+  above: 25
+condition:
+- condition: time
+  after: '16:15:00'
+  before: '17:00:00'
+  weekday:
+  - mon
+  - tue
+  - wed
+  - thu
+  - fri
+action:
+  service: notify.pushbullet
+  data_template:
+    message: >
+      Commute delay of {{ trigger.to_state.state|round }} to home.

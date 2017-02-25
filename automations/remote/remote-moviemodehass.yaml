@@ -1,0 +1,8 @@
+alias: "Movie Mode started from HASS"
+trigger:
+  platform: state
+  entity_id: input_select.harmony
+  to: 'Movie Mode'
+action:
+  service: script.turn_on
+  entity_id: script.moviemode

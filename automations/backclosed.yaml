@@ -1,0 +1,11 @@
+alias: Backdoor Closed
+trigger:
+    platform: state
+    entity_id: sensor.backdoor
+    from: 'open'
+    to: 'closed'
+    state: 'closed'
+action:
+  - delay: 00:01:30  
+  - service: light.turn_off
+    entity_id: light.entry

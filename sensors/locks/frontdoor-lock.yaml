@@ -1,0 +1,4 @@
+platform: mqtt
+state_topic: "smartthings/Frontdoor Lock/lock"
+name: "Frontdoor Deadbolt"
+retain: true

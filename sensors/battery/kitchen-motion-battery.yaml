@@ -1,0 +1,4 @@
+platform: mqtt
+state_topic: "smartthings/Kitchen Motion/battery"
+name: "Kitchen Motion Battery"
+retain: true

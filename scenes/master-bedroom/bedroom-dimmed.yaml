@@ -1,0 +1,14 @@
+name: Bedroom Dimmed
+entities:
+  light.bedroom_one:
+    state: on
+    brightness: 77
+    color_temp: 443
+  light.bedroom_2:
+    state: on
+    brightness: 77
+    color_temp: 443
+  light.bedroom_3:
+    state: on
+    brightness: 77
+    color_temp: 443

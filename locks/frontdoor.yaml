@@ -1,0 +1,7 @@
+platform: mqtt
+name: "Frontdoor Lock"
+state_topic: "smartthings/Frontdoor Lock/lock"
+command_topic: "smartthings/Frontdoor Lock/lock"
+payload_lock: "locked"
+payload_unlock: "unlocked"
+retain: true

@@ -1,0 +1,8 @@
+name: Bedroom Off
+entities:
+  light.bedroom_one:
+    state: off
+  light.bedroom_2:
+    state: off
+  light.bedroom_3:
+    state: off

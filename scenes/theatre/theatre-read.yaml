@@ -1,0 +1,16 @@
+name: Theatre Read
+entities:
+  light.fireplace_left:
+    state: on
+    brightness: 255
+    color_temp: 343
+  light.fireplace_right:
+    state: on
+    brightness: 255
+    color_temp: 343
+  light.center:
+    state: on
+    brightness: 255
+    color_temp: 343
+  light.television_backlight:
+    state: off

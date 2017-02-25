@@ -1,0 +1,4 @@
+platform: mqtt
+state_topic: "smartthings/Utility Room/battery"
+name: "Utility Room Battery"
+retain: true

@@ -1,0 +1,11 @@
+alias: Pantry Open
+trigger:
+    platform: state
+    entity_id: sensor.pantry
+    from: 'closed'
+    to: 'open'
+    state: 'open'
+action:
+    service: light.turn_on
+    entity_id: light.pantry
+

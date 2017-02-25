@@ -1,0 +1,36 @@
+scene_bedroom:
+  name: Scene
+  icon: mdi:brightness-auto
+  initial: "-"
+  options:
+    - "-"
+    - "Off"
+    - Nightlight
+    - Dimmed
+    - Relax
+    - Read
+    - Bright
+scene_theatre:
+  name: Scene
+  icon: mdi:brightness-auto
+  initial: "-"
+  options:
+    - "-"
+    - "Off"
+    - Movie
+    - Nightlight
+    - Dimmed
+    - Relax
+    - Read
+    - Bright
+harmony:
+  name: Harmony
+  initial: "-"
+  icon: mdi:monitor
+  options:
+    - "-"
+    - Plex
+    - Xbox One 
+    - PS4
+    - Power Off
+

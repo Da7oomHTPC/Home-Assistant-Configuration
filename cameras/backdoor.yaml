@@ -1,0 +1,4 @@
+platform: ffmpeg
+input: !secret camera_backdoor
+name: Backdoor
+extra_arguments: -q:v 2

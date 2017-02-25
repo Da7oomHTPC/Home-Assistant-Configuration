@@ -1,0 +1,14 @@
+alias: Brightness Landing
+trigger:
+  platform: state
+  entity_id: input_slider.brightness_landing
+action:
+  service: light.turn_on
+  data:
+    entity_id:
+      - light.landing_front
+      - light.landing_rear
+      - light.landing_center
+      - light.landing_stairs
+  data_template:
+    brightness: '{{ states( "input_slider.brightness_landing" )|round( 0 ) }}'

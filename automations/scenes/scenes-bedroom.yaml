@@ -1,0 +1,25 @@
+alias: Scene bedroom Room
+trigger:
+  platform: state
+  entity_id: input_select.scene_bedroom
+action:
+  - service: scene.turn_on
+    data_template:
+      entity_id: >
+        {% if is_state( "input_select.scene_bedroom", "Nightlight" ) %}
+          scene.bedroom_nightlight
+        {%-elif is_state( "input_select.scene_bedroom", "Dimmed" ) %}
+          scene.bedroom_dimmed
+        {%-elif is_state( "input_select.scene_bedroom", "Relax" ) %}
+          scene.bedroom_relax
+        {%-elif is_state( "input_select.scene_bedroom", "Read" ) %}
+          scene.bedroom_read
+        {%-elif is_state( "input_select.scene_bedroom", "Bright" ) %}
+          scene.bedroom_concentrate
+        {%-elif is_state( "input_select.scene_bedroom", "Off" ) %}
+          scene.bedroom_off
+        {% endif %}
+  - service: input_select.select_option
+    data:
+      entity_id: input_select.scene_bedroom
+      option: "-"

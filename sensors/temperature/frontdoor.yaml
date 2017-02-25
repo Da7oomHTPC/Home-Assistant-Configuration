@@ -1,0 +1,5 @@
+platform: mqtt
+state_topic: "smartthings/Frontdoor/temperature"
+name: "Living Room Temperature"
+unit_of_measurement: "F"
+retain: true

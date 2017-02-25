@@ -1,0 +1,15 @@
+name: Bedroom Concentrate
+entities:
+  light.bedroom_one:
+    state: on
+    brightness: 255
+    color_temp: 230
+  light.bedroom_2:
+    state: on
+    brightness: 255
+    color_temp: 230
+  light.bedroom_3:
+    state: on
+    brightness: 255
+    color_temp: 230
+  

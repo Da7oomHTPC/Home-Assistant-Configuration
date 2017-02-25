@@ -1,0 +1,8 @@
+alias: "PS4 started from HASS"
+trigger:
+  platform: state
+  entity_id: input_select.harmony
+  to: 'PS4'
+action:
+  service: script.turn_on
+  entity_id: script.ps4

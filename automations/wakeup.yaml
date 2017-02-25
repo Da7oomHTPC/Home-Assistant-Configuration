@@ -1,0 +1,18 @@
+alias: Wake Up
+trigger:
+  platform: time
+  after: "07:59:00"
+action:
+  - service: light.turn_on
+    entity_id: group.bedroomlights
+    data:
+      transition: 900
+      brightness: 255 
+  - delay: 0:01
+  - service: notify.pushbullet
+    data:
+      message: "It's time to wake up!"
+  - delay: 0:10
+  - service: notify.pushbullet
+    data:
+      message: "Are you awake?"

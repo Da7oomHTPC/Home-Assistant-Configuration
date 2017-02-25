@@ -1,0 +1,4 @@
+platform: ffmpeg
+input: !secret camera_frontdoor
+name: Frontdoor
+extra_arguments: -q:v 2

@@ -1,0 +1,5 @@
+alias: "As you wish"
+sequence:
+  - service: notify.basementtab
+    data:
+       message: "As you wish"

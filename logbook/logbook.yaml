@@ -1,0 +1,25 @@
+include: 
+    entities:
+    - device_tracker.joe_joe
+    - device_tracker.c_43b2b5b5027ba2db
+    - device_tracker.c_071c1cf0d26b1be3
+    - sensor.work_to_home
+    - sensor.home_to_work
+    - sensor.phone_to_home
+    - sensor.pihole
+    - sensor.hallway_thermostat_danest_temperature
+    - sensor.water_temperature
+    - sensor.living_room_nest_protect_co_status
+    - sensor.downstairs_nest_protect_co_status
+    - sensor.living_room_nest_protect_smoke_status
+    - sensor.downstairs_nest_protect_smoke_status
+    - sensor.ups_battery
+    - sensor.ups_input_voltage
+    - sensor.ups_load
+    - sensor.ups_nominal_input_voltage
+    - sensor.ups_nominal_output_power
+    - sensor.ups_status
+    - lock.backdoor_lock
+    - sensor.backdoor
+    - lock.frontdoor_lock
+    - sensor.frontdoor

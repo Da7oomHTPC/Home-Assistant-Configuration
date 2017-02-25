@@ -1,0 +1,20 @@
+alias: Brightness Theatre Sync
+trigger:
+  - platform: state
+    entity_id: light.fireplace_left
+    to: "on"
+  - platform: state
+    entity_id: light.fireplace_right
+    to: "on"
+  - platform: state
+    entity_id: light.center
+    to: "on"
+  - platform: state
+    entity_id: light.television_backlight
+    to: "on"
+action:
+  service: input_slider.select_value
+  data:
+    entity_id: input_slider.brightness_theatre
+  data_template:
+    value: '{{ trigger.to_state.attributes.brightness|float }}'

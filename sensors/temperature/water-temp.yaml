@@ -1,0 +1,7 @@
+platform: mqtt
+state_topic: "smartthings/Rheem Econet: Gas Water Heater [WiFi]/heatingSetpoint"
+name: "Water Temperature"
+unit_of_measurement: "F"
+retain: true
+
+

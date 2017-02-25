@@ -1,0 +1,5 @@
+- platform: automatic
+  client_id: !secret automatic_ci
+  secret: !secret automatic_s
+  username: !secret email_typo
+  password: !secret http_password

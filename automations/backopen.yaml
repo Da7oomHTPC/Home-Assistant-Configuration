@@ -1,0 +1,11 @@
+alias: Backdoor Opening
+trigger:
+    platform: state
+    entity_id: sensor.backdoor
+    from: 'closed'
+    to: 'open'
+    state: 'open'
+action:
+    service: light.turn_on
+    entity_id: light.entry
+

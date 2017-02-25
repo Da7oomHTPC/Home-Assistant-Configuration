@@ -1,0 +1,16 @@
+input_slider.brightness_living:
+  friendly_name: Brightness
+  icon: mdi:brightness-6
+input_slider.brightness_bedroom:
+  friendly_name: Brightness
+  icon: mdi:brightness-6
+input_slider.brightness_landing:
+  friendly_name: Brightness
+  icon: mdi:brightness-6
+input_slider.brightness_theatre:
+  friendly_name: Brightness
+  icon: mdi:brightness-6
+
+
+
+

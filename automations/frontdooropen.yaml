@@ -1,0 +1,14 @@
+alias: Frontdoor Left Open
+trigger:
+    platform: state
+    entity_id: sensor.frontdoor
+    from: 'closed'
+    to: 'open'
+    state: 'open'
+    for: 
+      minutes: 5
+action:
+    service: notify.pushbullet
+    data:
+      message: "The frontdoor is open"
+

@@ -1,0 +1,17 @@
+alias: Brightness Living Room Sync
+trigger:
+  - platform: state
+    entity_id: light.stairs_1
+    to: "on"
+  - platform: state
+    entity_id: light.stairs_2
+    to: "on"
+  - platform: state
+    entity_id: light.stairs_3
+    to: "on"
+action:
+  service: input_slider.select_value
+  data:
+    entity_id: input_slider.brightness_living
+  data_template:
+    value: '{{ trigger.to_state.attributes.brightness|float }}'

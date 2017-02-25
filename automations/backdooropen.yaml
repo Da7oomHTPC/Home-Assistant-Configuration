@@ -1,0 +1,14 @@
+alias: Backdoor Left Open
+trigger:
+    platform: state
+    entity_id: sensor.backdoor
+    from: 'closed'
+    to: 'open'
+    state: open
+    for:
+      minutes: 5
+action:
+    service: notify.pushbullet
+    data:
+      message: "The backdoor is open"
+

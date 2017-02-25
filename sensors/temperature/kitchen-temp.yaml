@@ -1,0 +1,7 @@
+platform: mqtt
+state_topic: "smartthings/Kitchen Motion/temperature"
+name: "Kitchen Temperature"
+unit_of_measurement: "F"
+retain: true
+
+

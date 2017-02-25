@@ -1,0 +1,4 @@
+platform: mqtt
+state_topic: "smartthings/Frontdoor/contact"
+name: "Frontdoor"
+retain: true

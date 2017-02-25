@@ -1,0 +1,5 @@
+platform: google_travel_time
+name: Work to Home
+api_key: AIzaSyCSWkLHdgQdRkUYrsU3p8TXg0IDyPyiW1Y
+origin: zone.work
+destination: zone.home

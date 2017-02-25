@@ -1,0 +1,17 @@
+alias: Brightness Bedroom Sync
+trigger:
+  - platform: state
+    entity_id: light.bedroom_1
+    to: "on"
+  - platform: state
+    entity_id: light.bedroom_2
+    to: "on"
+  - platform: state
+    entity_id: light.bedroom_3
+    to: "on"
+action:
+  service: input_slider.select_value
+  data:
+    entity_id: input_slider.brightness_bedroom
+  data_template:
+    value: '{{ trigger.to_state.attributes.brightness|float }}'

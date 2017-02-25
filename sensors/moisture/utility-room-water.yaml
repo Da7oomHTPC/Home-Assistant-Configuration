@@ -1,0 +1,4 @@
+platform: mqtt
+state_topic: "smartthings/Utility Room/water"
+name: "Utility Room Moisture"
+retain: true

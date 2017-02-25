@@ -1,0 +1,14 @@
+alias: TempLow
+trigger:
+  platform: numeric_state
+  entity_id: sensor.hallway_thermostat_danest_temperature
+  below: 62
+action:
+  - service: notify.pushbullet
+    data:
+       message: "Thermostat is reporting temperature lower than expected."
+  - service: climate.set_temperature
+    data:
+       entity_id: climate.hallway_danest
+       temperature: '68'
+ 

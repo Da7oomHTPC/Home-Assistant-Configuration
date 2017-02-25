@@ -1,0 +1,4 @@
+platform: mqtt
+state_topic: "smartthings/Pantry Door/battery"
+name: "Pantry Battery"
+retain: true

@@ -1,0 +1,20 @@
+name: Theatre Concentrate
+entities:
+  light.fireplace_left:
+    state: on
+    brightness: 255
+    color_temp: 230
+  light.fireplace_right:
+    state: on
+    brightness: 255
+    color_temp: 230
+  light.center:
+    state: on
+    brightness: 255
+    color_temp: 230
+  light.television_backlight:
+    state: on
+    brightness: 255
+    color_temp: 230
+
+  

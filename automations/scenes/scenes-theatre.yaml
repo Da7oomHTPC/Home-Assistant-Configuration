@@ -1,0 +1,27 @@
+alias: Scene Theatre Room
+trigger:
+  platform: state
+  entity_id: input_select.scene_theatre
+action:
+  - service: scene.turn_on
+    data_template:
+      entity_id: >
+        {% if is_state( "input_select.scene_theatre", "Nightlight" ) %}
+          scene.theatre_nightlight
+        {%-elif is_state( "input_select.scene_theatre", "Dimmed" ) %}
+          scene.theatre_dimmed
+        {%-elif is_state( "input_select.scene_theatre", "Movie" ) %}
+          scene.theatre_movie
+        {%-elif is_state( "input_select.scene_theatre", "Relax" ) %}
+          scene.theatre_relax
+        {%-elif is_state( "input_select.scene_theatre", "Read" ) %}
+          scene.theatre_read
+        {%-elif is_state( "input_select.scene_theatre", "Bright" ) %}
+          scene.theatre_concentrate
+        {%-elif is_state( "input_select.scene_theatre", "Off" ) %}
+          scene.theatre_off
+        {% endif %}
+  - service: input_select.select_option
+    data:
+      entity_id: input_select.scene_theatre
+      option: "-"

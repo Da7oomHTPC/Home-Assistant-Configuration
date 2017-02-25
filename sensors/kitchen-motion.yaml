@@ -1,0 +1,4 @@
+platform: mqtt
+state_topic: "smartthings/Kitchen Motion/motion"
+name: "Kitchen Motion Sensor"
+retain: true

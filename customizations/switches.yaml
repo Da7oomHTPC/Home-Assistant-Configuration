@@ -1,0 +1,9 @@
+switch.purifier:
+  friendly_name: Purifier
+  icon: mdi:weather-windy
+switch.top_light_load:
+  friendly_name: Office Lights
+  icon: mdi:lightbulb
+switch.nanoleaf:
+  friendly_name: Nanoleaf
+  icon: mdi:leaf

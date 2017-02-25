@@ -1,0 +1,45 @@
+light.james_1:
+  friendly_name: Jamers Room 1
+light.james_2:
+  friendly_name: Jamers Room 2
+light.james_3:
+  friendly_name: Jamers Room 3
+light.bedroom_one:
+  friendly_name: Master Bedroom 1
+light.bedroom_2:
+  friendly_name: Master Bedroom 2
+light.bedroom_3:
+  friendly_name: Master Bedroom 3
+light.stairs_one:
+  friendly_name: Stairs 1
+light.stairs_2:
+  friendly_name: Stairs 2
+light.stairs_3:
+  friendly_name: Stairs 3
+light.landing_front:
+  friendly_name: Landing Front
+light.landing_center:
+  friendly_name: Landing Center
+light.landing_rear:
+  friendly_name: Landing Rear
+light.landing_stairs:
+  friendly_name: Landing Stairs
+light.fireplace_left:
+  friendly_name: Fireplace Left
+light.fireplace_right:
+  friendly_name: Fireplace Right
+light.center:
+  friendly_name: Home Theater
+light.television_backlight:
+  friendly_name: Television Backlight
+
+
+
+
+
+
+
+
+
+
+

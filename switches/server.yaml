@@ -1,0 +1,4 @@
+platform: wake_on_lan
+name: "Server"
+host: !secret ups
+mac_address: !secret ups_mac

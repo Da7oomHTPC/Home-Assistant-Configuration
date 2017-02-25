@@ -1,0 +1,5 @@
+platform: mqtt
+state_topic: "smartthings/Pantry Door/temperature"
+name: "Pantry Temperature"
+unit_of_measurement: "F"
+retain: true

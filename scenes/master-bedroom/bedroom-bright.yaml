@@ -1,0 +1,14 @@
+name: Bedroom Bright
+entities:
+  light.bedroom_one:
+    state: on
+    brightness: 255
+    color_temp: 363
+  light.bedroom_2:
+    state: on
+    brightness: 255
+    color_temp: 363
+  light.bedroom_3:
+    state: on
+    brightness: 255
+    color_temp: 363

@@ -1,0 +1,10 @@
+name: Theatre Off
+entities:
+  light.fireplace_left:
+    state: off
+  light.fireplace_right:
+    state: off
+  light.center:
+    state: off
+  light.television_backlight:
+    state: off

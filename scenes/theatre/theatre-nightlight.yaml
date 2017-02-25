@@ -1,0 +1,16 @@
+name: Theatre Nightlight
+entities:
+  light.fireplace_left:
+    state: on
+    brightness: 1
+    color_temp: 450
+  light.fireplace_right:
+    state: on
+    brightness: 1
+    color_temp: 450
+  light.center:
+    state: on
+    brightness: 1
+    color_temp: 450
+  light.television_backlight:
+    state: off
