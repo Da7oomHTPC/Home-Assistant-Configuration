@@ -2,15 +2,13 @@
 #
 #                           HOME
 #
-#########################*####################################
+##############################################################
 
 default_view:
   name: DEFAULT
   view: yes
   icon: mdi:home
   entities:
-    - sensor.pihole
-    - sun.sun
     - group.locks
     - group.office
     - group.master
@@ -29,10 +27,9 @@ theatre:
   name: Theatre
   control: hidden
   entities:
-    - group.theatrelights
+    - light.theatre
     - light.television_backlight
     - switch.nanoleaf
-    - input_slider.brightness_theatre
     - input_select.harmony
     - input_select.scene_theatre
 
@@ -41,19 +38,17 @@ master:
   name: Master Bedroom
   control: hidden
   entities:
-    - group.bedroomlights
+    - light.bedroom
     - light.shanna_nightstand
     - light.joe_nightstand
     - switch.purifier
-    - input_slider.brightness_bedroom
     - input_select.scene_bedroom
 
 living_room:
   name: Living Room
   control: hidden
   entities:
-    - group.stairs
-    - input_slider.brightness_living
+    - light.stairs
 
 office: 
   name: Office
@@ -65,41 +60,8 @@ landing:
   name: Landing
   control: hidden
   entities: 
-    - group.landinglights
-    - input_slider.brightness_landing
-
-stairs:
-   name: Stairs
-   icon: mdi:lightbulb
-   entities:
-    - light.stairs_1
-    - light.stairs_2
-    - light.stairs_3
-
-landinglights:
-   name: Landing
-   icon: mdi:lightbulb
-   entities:
-    - light.landing_center
-    - light.landing_front
-    - light.landing_stairs
-    - light.landing_rear
-
-bedroomlights:
-    name: Bedroom Lights
-    icon: mdi:lightbulb
-    entities:
-    - light.bedroom_one
-    - light.bedroom_2
-    - light.bedroom_3
-
-theatrelights: 
-   name: Theatre Lights
-   icon: mdi:lightbulb
-   entities:
-   - light.fireplace_left
-   - light.fireplace_right
-   - light.center
+    - light.landing
+ 
 
 ##############################################################
 #
@@ -232,6 +194,7 @@ backup:
 sensor_pi:
   name: System Monitor
   entities:
+    - sensor.pihole
     - sensor.cpu_use
     - sensor.disk_use_
     - sensor.ram_use
@@ -357,4 +320,11 @@ media_players:
   entities:
   - group._plex_devices_active
   - group._plex_devices_inactive
+  - group.minecraft
 
+minecraft:
+  name: Minecraft Servers
+  entities:
+  - sensor.shopscraft_minigames
+  - sensor.shopscraft_players
+  - sensor.shopscraft_motd

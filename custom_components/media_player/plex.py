@@ -30,8 +30,7 @@ from homeassistant.helpers.event import (track_utc_time_change)
 REQUIREMENTS = ['plexapi==2.0.2']
 MIN_TIME_BETWEEN_SCANS = timedelta(seconds=10)
 MIN_TIME_BETWEEN_FORCED_SCANS = timedelta(seconds=1)
-DEFAULT_MAX_FROZEN_PLAYING = 60
-DEFAULT_MAX_FROZEN_PAUSED = 300
+
 
 PLEX_CONFIG_FILE = 'plex.conf'
 
@@ -55,10 +54,10 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     cv.boolean,
     vol.Optional(CONF_USE_CUSTOM_ENTITY_IDS, default=False):
     cv.boolean,
-    vol.Optional(CONF_MAX_FROZEN_PLAYING, default=DEFAULT_MAX_FROZEN_PLAYING):
+    vol.Optional(CONF_MAX_FROZEN_PLAYING, default=60):
     cv.positive_int,
-    vol.Optional(CONF_MAX_FROZEN_PAUSED, default=DEFAULT_MAX_FROZEN_PAUSED):
-    cv.positive_int,
+    vol.Optional(CONF_MAX_FROZEN_PAUSED, default=300):
+    cv.positive_int
 })
 
 # Map ip to request id for configuring
@@ -108,24 +107,24 @@ def setup_platform(hass, config, add_devices_callback, discovery_info=None):
     optional_config[CONF_SHOW_ALL_CONTROLS] = config.get(
         CONF_SHOW_ALL_CONTROLS)
 
-    max_frozen_playing = DEFAULT_MAX_FROZEN_PLAYING
+    max_frozen_playing = 60
     try:
-        max_frozen_playing = int(config.get(CONF_MAX_FROZEN_PLAYING))
+        max_frozen_playing = 60
     except ValueError:
         pass
     finally:
         if max_frozen_playing <= 0:
-            max_frozen_playing = DEFAULT_MAX_FROZEN_PLAYING
+            max_frozen_playing = 60
     optional_config[CONF_MAX_FROZEN_PLAYING] = max_frozen_playing
 
-    max_frozen_paused = DEFAULT_MAX_FROZEN_PAUSED
+    max_frozen_paused = 300
     try:
-        max_frozen_paused = int(config.get(CONF_MAX_FROZEN_PAUSED))
+        max_frozen_paused = 300
     except ValueError:
         pass
     finally:
         if max_frozen_paused <= 0:
-            max_frozen_paused = DEFAULT_MAX_FROZEN_PAUSED
+            max_frozen_paused = 300
     optional_config[CONF_MAX_FROZEN_PAUSED] = max_frozen_paused
 
     config = config_from_file(hass.config.path(PLEX_CONFIG_FILE))

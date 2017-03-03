@@ -1,0 +1,5 @@
+platform: template
+sensors:
+  shopscraft_players:
+    value_template: '{{ states.sensor.shopscraft_minigames.attributes.users }}'
+    friendly_name: 'Players Online:'

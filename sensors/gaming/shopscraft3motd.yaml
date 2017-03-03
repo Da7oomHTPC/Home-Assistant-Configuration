@@ -1,0 +1,5 @@
+platform: template
+sensors:
+  shopscraft_motd:
+    value_template: '{{ states.sensor.shopscraft_minigames.attributes.MOTD }}'
+    friendly_name: 'Message of the Day:'
