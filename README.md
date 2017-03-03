@@ -186,16 +186,16 @@ My personal Home Assistant Configuration.
    </tbody>
 	 </table>
 #Screenshots
-![Status](https://raw.githubusercontent.com/jopsahl/Home-Assistant-Configuration/master/screenshots/1.jpg)
+![Status](https://raw.githubusercontent.com/Jopsahl/Home-Assistant-Configuration/master/screenshots/1.jpg)
 
-![Automation](https://raw.githubusercontent.com/jopsahl/Home-Assistant-Configuration/master/screenshots/2.jpg)
+![Automation](https://raw.githubusercontent.com/Jopsahl/Home-Assistant-Configuration/master/screenshots/2.jpg)
 
-![Cameras](https://raw.githubusercontent.com/jopsahl/Home-Assistant-Configuration/master/screenshots/3.jpg)
+![Cameras](https://raw.githubusercontent.com/Jopsahl/Home-Assistant-Configuration/master/screenshots/3.jpg)
 
-![Location](https://raw.githubusercontent.com/jopsahl/Home-Assistant-Configuration/master/screenshots/4.jpg)
+![Location](https://raw.githubusercontent.com/Jopsahl/Home-Assistant-Configuration/master/screenshots/4.jpg)
 
-![Rooms](https://raw.githubusercontent.com/jopsahl/Home-Assistant-Configuration/master/screenshots/5.jpg)
+![Rooms](https://raw.githubusercontent.com/Jopsahl/Home-Assistant-Configuration/master/screenshots/5.jpg)
 
-![Media_Players](https://raw.githubusercontent.com/jopsahl/Home-Assistant-Configuration/master/screenshots/6.jpg)
+![Media_Players](https://raw.githubusercontent.com/Jopsahl/Home-Assistant-Configuration/master/screenshots/6.jpg)
 
-![Monitoring](https://raw.githubusercontent.com/jopsahl/Home-Assistant-Configuration/master/screenshots/7.jpg)
+![Monitoring](https://raw.githubusercontent.com/Jopsahl/Home-Assistant-Configuration/master/screenshots/7.jpg)
